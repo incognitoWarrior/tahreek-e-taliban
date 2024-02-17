@@ -1,0 +1,77 @@
+<html><head>
+		<title>VEHICLE DETAIL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function chk()
+			{	if(document.FORM1.registrationNo.value.length < 4) { alert('Please enter the Vehicle Registration Number.'); document.FORM1.registrationNo.focus(); }
+				if(document.FORM1.STYPE.value.length < 1) { alert('Please select the Vehicle Search Type.'); document.FORM1.STYPE.focus(); }
+				else { document.FORM1.submit(); } }
+	
+	function rst() { window.location.replace(location.pathname); document.fonline.reset(); }
+	
+	</script>
+	<style type="text/css">
+
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+table { 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: #ffffff;
+}
+
+input[type=text], SELECT {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size:16px;
+  font-variant:small-caps;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  resize: vertical;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+</style>
+	</head>
+	<body>
+	<br><br><br><center>
+		
+		<form name="FORM1" method="POST" action="VEHDATA.php">
+			<table border="0" cellpadding="5px" cellspacing="8px" width="90%" bgcolor="#F2F2E6">
+			<tbody><tr><td align="center"><font size="3em"><b>CHECK REGISTERED VEHICLE DETAIL</b></font></td></tr>
+			<tr>
+				<td width="300" align="center">Search By:<br>
+					<select name="STYPE" size="1" width="25">
+						<option value="R">Registration Number</option>
+						<option value="C">Chassis Number</option>
+						<option value="N">CNIC</option>
+					</select>
+				</td>
+			</tr>
+			<tr><td align="center">REGISTRATION NO.<br><input type="TEXT" size="25" name="registrationNo"><br>(IDN-9830 , AAD-018 , ZZ-444)</td></tr>
+			<tr><td align="center">&nbsp;&nbsp;&nbsp;<input type="BUTTON" name="SUBMIT" value=" C H E C K " onclick="chk();">&nbsp;&nbsp;&nbsp;<input type="button" name="RESET" value=" R E S E T " onclick="rst();"></td></tr>
+			<tr><td align="center"><hr></td></tr>
+			</tbody></table>
+        </form>
+    
+        <style>
+
+body { font-size: 14px; }
+
+</style>
+
+
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="#EEEEEE" width="90%"><tbody><tr bgcolor="#dddddd"><td colspan="2"><b>V E H I C L E &nbsp; D E T A I L:</b><hr></td></tr><tr bgcolor="#eeeeee"><td>REG. NO : </td><td>ADU-543</td></tr><tr><td>REG. DATE : </td><td>10-MAY-17</td></tr><tr bgcolor="#eeeeee"><td>CHASSIS NO : </td><td>A1J310PK10028875</td></tr><tr><td>ENGINE NO : </td><td>PK10B128901</td></tr><tr bgcolor="#eeeeee"><td>BODYTYPE : </td><td>MOTOR CAR</td></tr><tr><td>MAKER-MAKE : </td><td>SUZUKI / WAGON-R</td></tr><tr bgcolor="#eeeeee"><td>COLOR : </td><td>GRPT GRAY</td></tr><tr><td>ENGINE CAPACITY : </td><td>998</td></tr><tr bgcolor="#eeeeee"><td>MANUFACTURED: </td><td>2017</td></tr><tr><td>PURCHASE TYPE : </td><td>LOCAL</td></tr><tr bgcolor="#eeeeee"><td>PURCHASE DATE : </td><td>28-APR-17</td></tr><tr><td>PPRICE : </td><td>1114000</td></tr><tr bgcolor="#eeeeee"><td>CNIC : </td><td>3740615967052</td></tr><tr><td>NTN : </td><td></td></tr><tr bgcolor="#eeeeee"><td>OWNER NAME : </td><td>ZUBAIDA KHANUM</td></tr><tr><td>F/H NAME : </td><td>SHABIR AHMED</td></tr><tr bgcolor="#eeeeee"><td>ADDRESS : </td><td>HNO-D-1117 ST 20 WAH CANTT, RAWALPINDI</td></tr><tr><td>CONTACT NO. : </td><td>03045444035</td></tr><tr bgcolor="#eeeeee"><td>TAX PAID UPTO : </td><td>LIFE-TIME</td></tr><tr><td>CERTIFICATE STATUS: </td><td>ORIGNAL</td></tr><tr bgcolor="#eeeeee"><td>VEHICLE STATUS: </td><td>TRANSFERRED</td></tr><tr><td>VEHICLE HPA: </td><td></td></tr></tbody></table><br><br><br>    
+    </center>
+	
+</body></html>
